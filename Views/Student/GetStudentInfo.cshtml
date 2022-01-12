@@ -1,0 +1,14 @@
+﻿@using WebApplication1.Models;
+
+
+@{
+    ViewBag.Title = "GetStudentInfo";
+}
+
+<div>
+    @foreach (Student item in ViewBag.AllInfo)
+    {
+    <div>@item.FirstName , @item.LastName,@item.Class,@item.Age</div>
+    }
+</div>
+
