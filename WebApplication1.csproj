@@ -179,6 +179,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Student\GetStudentName.cshtml" />
     <Content Include="Views\Student\GetStudentInfo.cshtml" />
+    <Content Include="Views\Student\GetById.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

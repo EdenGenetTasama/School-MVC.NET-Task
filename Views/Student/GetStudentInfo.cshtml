@@ -6,9 +6,10 @@
 }
 
 <div>
-    @foreach (Student item in ViewBag.AllInfo)
+    @foreach (Student item in Model)
     {
-    <div>@item.FirstName , @item.LastName,@item.Class,@item.Age</div>
+    <div>@item.FirstName , @item.LastName , @item.Class , @item.Age</div>
+    <img src="http://www.yo-yoo.co.il/coolpics/images/uploads/loveityoyo3.jpg"/>
     }
 </div>
 

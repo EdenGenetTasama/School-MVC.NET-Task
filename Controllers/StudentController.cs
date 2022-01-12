@@ -21,19 +21,26 @@ namespace WebApplication1.Controllers
         // GET: Student
         public ActionResult GetStudentName()
         {
-            string studentName = studentArray[0].FirstName;
-            ViewBag.StudentName = studentName;
+            ViewBag.StudentName = studentArray[0].FirstName;
             return View();
         }
 
         public ActionResult GetStudentInfo()
         {
-            ViewBag.AllInfo = studentArray;
-            return View();
+
+            return View(studentArray);
         }
 
-        public ActionResult GetAllStudntsInfo()
+        public ActionResult GetById(int Id)
         {
+            foreach (Student student in studentArray)
+            {
+                if (student.Id == Id)
+                {
+                    ViewBag.matchId = $"{student.Id}, {student.FirstName} , {student.LastName} , {student.Age}, {student.Class}";
+                }
+                ViewBag.Massage = "Not Found";
+            }
             return View();
         }
 
