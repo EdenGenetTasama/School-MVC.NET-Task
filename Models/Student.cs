@@ -23,5 +23,12 @@ namespace WebApplication1.Models
 
 
 
+       public static List<Student> listOfStudents = new List<Student>()
+        {
+           new Student(0, "Eden" , "Tasama" , 7 , 25),
+           new Student(1, "Yafit" , "Samuel" , 8 , 28),
+           new Student(2, "Keren" , "Hailu" ,9 , 50),
+           new Student(3, "Tikva" , "Yosef" , 10 , 70),
+        };
     }
 }
